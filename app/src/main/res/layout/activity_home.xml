@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+        <!-- Adding header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter a movie name to look up on OMDB"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:id="@+id/header"
+
+            />
+        <!-- Adding search textfild -->
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/searchEditTxt"
+            />
+        <!-- Adding Search Button -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_marginLeft="280dp"
+            android:layout_below="@id/header"
+            android:padding="5dp"
+            />
+
+        <!-- Adding Moview details textview -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchEditTxt"
+            android:text="Movie Details"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/detailsLabel"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+
+        <!-- Adding nothing yet textview -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nothing Yet"
+            android:layout_below="@id/detailsLabel"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"/>
+
+
+
+
+</RelativeLayout>
